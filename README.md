@@ -5,7 +5,7 @@
 
 A storage interface used to do key value data storage. Gives you the freedom to swap out storage implementations without any hassel. Also allows DI and mocking.
 
-## Usage
+## Interface
 
 The store intereface defines the following methods
 
@@ -33,3 +33,7 @@ RemoveItemFromList(key string, count int, value interface{}) error
 LengthOfList(key string) (int, error)
 ClearDataStore()
 ```
+
+## Usage
+
+Use the interface declaration in your code where you want to use the data store. You can intialize the store with anything that implements that store. Current implementation only supports Redis but can be easily implemented for any other key/value based data storage such as Bolt DB.
