@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "L8EYiKMwXWo6+QzKbxW71tFOAy4=",
+			"path": "github.com/awkhan/go-utility/configuration",
+			"revision": "54edcef2b6f081d41dbee8b89e785218164d5e8e",
+			"revisionTime": "2017-07-19T22:33:04Z"
+		},
+		{
+			"checksumSHA1": "2UmMbNHc8FBr98mJFN1k8ISOIHk=",
+			"path": "github.com/garyburd/redigo/internal",
+			"revision": "827b38687c49d680c6bd9ac6114111b98cc16cdf",
+			"revisionTime": "2016-12-29T11:06:54Z"
+		},
+		{
+			"checksumSHA1": "pofHSvosTrIPzQyddaLX5wy0ehI=",
+			"path": "github.com/garyburd/redigo/redis",
+			"revision": "827b38687c49d680c6bd9ac6114111b98cc16cdf",
+			"revisionTime": "2016-12-29T11:06:54Z"
+		},
+		{
+			"checksumSHA1": "5NBHAe3S15q3L9hOLThnMZjIZRE=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "f6abca593680b2315d2075e0f5e2a9751e3f431a",
+			"revisionTime": "2017-06-01T20:57:54Z"
+		}
+	],
+	"rootPath": "github.com/awkhan/go-store"
+}
