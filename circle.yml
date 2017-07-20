@@ -10,7 +10,7 @@ machine:
 dependencies:
   override:
     - mkdir -p "/home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME"
-    - mv "/home/ubuntu/go-utility" "/home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME"
+    - mv "/home/ubuntu/go-store" "/home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME"
 
 test:
   override:
