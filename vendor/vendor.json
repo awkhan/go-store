@@ -21,6 +21,12 @@
 			"revisionTime": "2016-12-29T11:06:54Z"
 		},
 		{
+			"checksumSHA1": "O2d6k/wJgvPgEfYKO6VvL1zOCc4=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "e49c59d69b89746796d48156991108c80faf1d7d",
+			"revisionTime": "2017-07-18T14:06:42Z"
+		},
+		{
 			"checksumSHA1": "5NBHAe3S15q3L9hOLThnMZjIZRE=",
 			"path": "github.com/stretchr/testify/assert",
 			"revision": "f6abca593680b2315d2075e0f5e2a9751e3f431a",
