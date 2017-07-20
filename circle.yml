@@ -1,0 +1,19 @@
+machine:
+  services:
+    - redis
+  environment:
+    CODECOV_TOKEN: dbd0552f-7d4b-4dd3-8a62-850fdc605958
+    REDIS_HOST: localhost
+    REDIS_PORT: 6379 
+    REDIS_PASSWORD: nopassword
+
+dependencies:
+  override:
+    - mkdir -p "/home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME"
+    - mv "/home/ubuntu/go-utility" "/home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME"
+
+test:
+  override:
+    - GOPATH=~/ sh /home/ubuntu/src/github.com/$CIRCLE_PROJECT_USERNAME/go-utility/run_tests.sh
+  post:    
+    - bash <(curl -s https://codecov.io/bash)
