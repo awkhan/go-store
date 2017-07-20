@@ -9,6 +9,12 @@
 			"revisionTime": "2017-07-19T22:33:04Z"
 		},
 		{
+			"checksumSHA1": "Q8s2c28sBX9t6d/qLlD3G/L/dkY=",
+			"path": "github.com/awkhan/go-utility/utility",
+			"revision": "54edcef2b6f081d41dbee8b89e785218164d5e8e",
+			"revisionTime": "2017-07-19T22:33:04Z"
+		},
+		{
 			"checksumSHA1": "2UmMbNHc8FBr98mJFN1k8ISOIHk=",
 			"path": "github.com/garyburd/redigo/internal",
 			"revision": "827b38687c49d680c6bd9ac6114111b98cc16cdf",
