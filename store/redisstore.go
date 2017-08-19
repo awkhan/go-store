@@ -3,6 +3,7 @@ package store
 import (
 	"errors"
 
+	"github.com/awkhan/go-utility/configuration"
 	"github.com/garyburd/redigo/redis"
 )
 
@@ -12,9 +13,9 @@ type Redis struct {
 }
 
 //NewRedisStore creates a new redis store with the supplied pool.
-func NewRedisStore(pool *redis.Pool) *Redis {
+func NewRedisStore(maxIdle int, idleTimeout int, host, port, password string) *Redis {
 	return &Redis{
-		redis: pool,
+		redis: configuration.GetRedisPool(maxIdle, idleTimeout, host, port, password),
 	}
 }
 

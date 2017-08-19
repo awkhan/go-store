@@ -6,7 +6,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/awkhan/go-utility/configuration"
 	"github.com/awkhan/go-utility/utility"
 	"github.com/stretchr/testify/assert"
 )
@@ -20,9 +19,7 @@ func TestMain(m *testing.M) {
 	port := os.Getenv("REDIS_PORT")
 	password := os.Getenv("REDIS_PASSWORD")
 
-	rp := configuration.GetRedisPool(int(maxIdle), int(timeout), host, port, password)
-
-	rs = NewRedisStore(rp)
+	rs = NewRedisStore(int(maxIdle), int(timeout), host, port, password)
 
 	exitVal := m.Run()
 	os.Exit(exitVal)
